@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="./img/logo.jpg" alt="Logo UTHH" class="logo">
+    </header>
+    <div class="sub-content">
+        <h1 class="sub-title">Portal Digital de Atención Integral a Estudiantes de la UTHH</h1>
+        <p>Hoy es: <time id="fecha"></time></p>
+    </div>
+
+    <div class="hamburguesa" id="hamburguesa">☰</div>
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <div class="menu-content"> 
+        <a href="./pantalla1.html">Cerrar sesión</a>
+        <select id="opciones">
+            <option>Datos de usuario</option>
+            <option>Cambiar contraseña</option>
+            <option>Actualizar datos de acceso</option>
+        </select>
+        <a href="./pantalla3.html">Consultar calificaciones</a><br><br>
+        <a href="#">Entrevista inicial</a>
+        <select id="pagos">
+            <option>Pagos</option>
+            <option>Pago de colegiatura</option>
+        </select><br>
+        <a href="#">Agenda</a>
+    </div>
+
+<main class="main-content">
+        <div class="content-principal"> 
+            <h1>Bienvenido</h1>
+            <h2>DULCE MARÍA GÓMEZ HERNÁNDEZ</h2>
+            <h2>ALUMNO DEL 1er CUATRIMESTRE, GRUPO B</h2>
+            <h2>ENERO-ABRIL 20261</h2>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Carretera Huejutla - Chalahuiyapa S/N, C.P. 43000, Huejutla de Reyes, Hidalgo.</p>
+        <p>Teléfonos: 789 8962088 al 91</p>
+        <p>E-mail: <a href="mailto:rectoria@uthh.edu.mx">rectoria@uthh.edu.mx</a></p>
+    </footer>
+    <script>
+        const fechaActual = new Date()
+        const opciones = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }
+        const fechaFormateada = fechaActual.toLocaleDateString('es-ES', opciones)
+        document.getElementById('fecha').textContent = fechaFormateada
+
+        const hamburguesa = document.getElementById('hamburguesa')
+const menuContent = document.querySelector('.menu-content')
+const menuOverlay = document.getElementById('menu-overlay')
+
+hamburguesa.addEventListener('click', () => {
+    menuContent.classList.toggle('active')
+    menuOverlay.classList.toggle('active')
+})
+
+menuOverlay.addEventListener('click', () => {
+    menuContent.classList.remove('active')
+    menuOverlay.classList.remove('active')
+})
+
+    </script>
+</body>
+</html>

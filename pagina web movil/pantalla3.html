@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="./img/logo.jpg" alt="Logo UTHH" class="logo">
+    </header>
+    <div class="sub-content">
+        <h1 class="sub-title">Portal Digital de Atención Integral a Estudiantes de la UTHH</h1>
+        <p>Hoy es: <time id="fecha"></time></p>
+    </div>
+
+    <div class="hamburguesa" id="hamburguesa">☰</div>
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <div class="menu-content"> 
+        <a href="./pantalla1.html">Cerrar sesión</a>
+        <select id="opciones">
+            <option>Datos de usuario</option>
+            <option>Cambiar contraseña</option>
+            <option>Actualizar datos de acceso</option>
+        </select>
+        <a href="./pantalla3.html">Consultar calificaciones</a><br><br>
+        <a href="#">Entrevista inicial</a>
+        <select id="pagos">
+            <option>Pagos</option>
+            <option>Pago de colegiatura</option>
+        </select><br>
+        <a href="#">Agenda</a>
+    </div>
+
+    <main class="main-consult">
+        <div class="consult">
+            <h2>Consulta de Calificaciones</h2>
+        </div>
+        <div class="main-dates">
+            <h2>ALUMNO: DULCE MARÍA GÓMEZ HERNÁNDEZ</h2><br>
+            <h2>CARRERA: TÉCNICO SUPERIOR UNIVERSITARIO EN TECNOLOGÍAS DE LA INFORMACIÓN ÁREA DE DESARROLLO DE SOFTWARE MULTIPLATAFORMA</h2><br>
+            <div class="row">
+                <h2>CUATRIMESTRE:</h2>
+                <select class="cuatri">
+                    <option>1er. CUATRIMESTRE</option>
+                </select>
+            </div><br>
+            <h2>GRUPO: B</h2><br>
+            <h2>PERIODO: 20243</h2>
+        </div>
+        <div>
+            <table class="grades-table">
+                <thead>
+                    <tr>
+                        <th>Nombre de la Materia</th>
+                        <th>M1</th>
+                        <th>M2</th>
+                        <th>M3</th>
+                        <th>Promedio Final</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ESTÁNDARES Y MÉTRICAS PARA EL DESARROLLO DE SOFTWARE</td>
+                        <td>8 Or</td>
+                        <td>9 Or</td>
+                        <td>9 Or</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>PRINCIPIOS PARA IoT</td>
+                        <td>9 Or</td>
+                        <td>7 E1</td>
+                        <td>8 Or</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>DISEÑO DE APPS</td>
+                        <td>8 Or</td>
+                        <td>7 E1</td>
+                        <td>10 Or</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>ESTRUCTURA DE DATOS APLICADAS</td>
+                        <td>7 E1</td>
+                        <td>8 Or</td>
+                        <td>7 Or</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>APLICACIONES WEB ORIENTADAS A SERVICIOS</td>
+                        <td>7 E1</td>
+                        <td>8 Or</td>
+                        <td>7 Or</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>EVALUACIÓN Y MEJORA PARA EL DESARROLLO DE SOFTWARE</td>
+                        <td>9 Or</td>
+                        <td>8 E1</td>
+                        <td>7 Or</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>INGLÉS IV</td>
+                        <td>8 E1</td>
+                        <td>7 Or</td>
+                        <td>8 Or</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>FORMACIÓN SOCIOCULTURAL IV</td>
+                        <td>10 Or</td>
+                        <td>9 Or</td>
+                        <td>9 Or</td>
+                        <td>9</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">PROMEDIO</td>
+                        <td>8</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="buttons-container">
+            <div>
+                <a href="#" class="button">Imprimir boleta</a>
+            </div>
+            <div>
+                <a href="#" class="button">Imprimir historial</a>
+            </div>
+        </div>
+
+        <div class="main-extra">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">SIGNIFICADO DE LAS ABREVIATURAS DE LA TABLA DE CALIFICACIONES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="abbreviation">Or</td>
+                        <td>La calificación se obtuvo en el parcial ordinario</td>
+                    </tr>
+                    <tr>
+                        <td class="abbreviation">E1</td>
+                        <td>La calificación se obtuvo en periodo extraordinario vuelta 1</td>
+                    </tr>
+                    <tr>
+                        <td class="abbreviation">E2</td>
+                        <td>La calificación se obtuvo en periodo extraordinario vuelta 2</td>
+                    </tr>
+                    <tr>
+                        <td class="abbreviation">E3</td>
+                        <td>La calificación se obtuvo en periodo extraordinario vuelta 3</td>
+                    </tr>
+                    <tr>
+                        <td class="abbreviation">NA</td>
+                        <td>No acreditado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Carretera Huejutla - Chalahuiyapa S/N, C.P. 43000, Huejutla de Reyes, Hidalgo.</p>
+        <p>Teléfonos: 789 8962088 al 91</p>
+        <p>E-mail: <a href="mailto:rectoria@uthh.edu.mx">rectoria@uthh.edu.mx</a></p>
+    </footer>
+    <script>
+        const fechaActual = new Date()
+        const opciones = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }
+        const fechaFormateada = fechaActual.toLocaleDateString('es-ES', opciones)
+        document.getElementById('fecha').textContent = fechaFormateada
+
+        const hamburguesa = document.getElementById('hamburguesa')
+        const menuContent = document.querySelector('.menu-content')
+        const menuOverlay = document.getElementById('menu-overlay')
+
+        hamburguesa.addEventListener('click', () => {
+            menuContent.classList.toggle('active')
+            menuOverlay.classList.toggle('active')
+        })
+
+        menuOverlay.addEventListener('click', () => {
+            menuContent.classList.remove('active')
+            menuOverlay.classList.remove('active')
+        })
+
+    </script>
+</body>
+</html>

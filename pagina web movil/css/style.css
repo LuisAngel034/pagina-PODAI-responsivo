@@ -1,0 +1,367 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    text-align: center;
+    background-color: #FBE290;
+    color: white;
+}
+
+.sub-content {
+    padding: 0.2rem;
+    background-color: #4e4d4d;
+    color: white;
+}
+
+.sub-title {
+    font-size: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.main-content {
+    padding: 1rem;
+}
+
+.login-section {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #036635;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    color: #036635;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+form button:hover {
+    background-color: #024924;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+    color: #024924;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.info-section {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.ruleta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    text-align: center;
+}
+
+.ruleta img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grades-section table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grades-section th, .grades-section td {
+    padding: 0.8rem;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.footer {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #b3e6c4;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 100%;
+        height: auto;
+        display: block;
+        max-width: 100%;
+    }
+    .ruleta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+
+.menu-content {
+    display: flex;
+    background-color: #272727;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #aaa;
+}
+
+.menu-content a, 
+.menu-content select {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.menu-content select {
+    background-color: #272727;
+    border: none;
+    padding: 5px;
+}
+
+.content-principal {
+    border: 3px solid green;
+    background-color: #c7f5c7;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.content-principal h1 {
+    text-align: center;
+    color:  rgb(1, 24, 1);
+}
+
+.content-principal h2 {
+    color:  rgb(1, 24, 1);
+    margin: 20px 0;
+    font-size: 18px;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.hamburguesa {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.menu-overlay.active,
+.menu-content.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .menu-content {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #272727;
+        padding: 20px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+
+    .menu-content a, 
+    .menu-content select {
+        font-size: 16px;
+        margin: 10px 0;
+        color: white;
+    }
+
+    .hamburguesa {
+        display: block;
+    }
+
+    a {
+        padding-left: 8px;
+    }
+}
+
+.main-consult {
+    padding: 20px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: left;
+}
+
+.consult {
+    text-align: center;
+    background-color: #f0d775;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.main-dates h2 {
+    font-size: 16px;
+    color: #1a562b;
+    margin: 5px 0;
+}
+
+.grades-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.grades-table th, 
+.grades-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.grades-table th {
+    background-color: #207223;
+    color: white;
+}
+
+.grades-table tfoot td {
+    background-color: #eaeaea;
+    font-weight: bold;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.button {
+    background-color: #207223;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.row h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.cuatri {
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.abbreviation {
+    width: 10%;
+    text-align: center;
+    font-weight: bold;
+}
+
+thead th {
+    text-align: center;
+    background-color: #207223;
+    color: white;
+    padding: 10px;
+    border: 2px solid black; 
+}
+
+tbody td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.main-extra {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    th, td {
+        font-size: 12px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+    .abbreviation {
+        width: 15%;
+    }
+    
+}
